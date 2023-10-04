@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  # backend:
+  #   build: ./api
+  #   container_name: api
+  #   ports:
+  #     - '4000:4000'
+  frontend:
+    # build: ./techtickets
+    build: ./
+    container_name: techtickets
+    ports:
+      - '3000:3000'
+    stdin_open: true
+    tty: true
